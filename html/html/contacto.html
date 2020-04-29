@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css.css" type="text/css">
+</head>
+
+<body class="contacto"> 
+    <div class="solo">
+        <header>
+            <div class="lym"><a href="../principal.html"><img src="../imagenes/logo.png"></a></div>
+        </header>
+        <nav class="navegacion">
+                <ul class="menu">
+                    <li><a href="#">Nuestra empresa</a>
+                        <ul class="submenu">
+                            <li><a href="qsomos.html">¿Quiénes somos?</a></li>
+                            <li><a href="unetenos.html">Únetenos</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="iys.html">Instalación y servicio</a></li>
+                    <li><a href="#">Asistencia al cliente</a>
+                        <ul class="submenu">
+                            <li><a href="contacto.html">Contacto</a></li>
+                            <li><a href="garantias.html">Garantías y reparaciones</a></li>
+                            <li><a href="pfreq.html">Preguntas frecuentes</a></li>
+                        </ul>
+                    </li>
+                </ul>
+        </nav>
+    </div>
+    <h1 class="contacto">Contacto</h1>
+    <!-- DIV DE CONTACTO -->
+    <section>
+  
+    <fieldset>
+            <legend>Datos de la empresa</legend>
+    <div class="contacto1">
+        <p>
+            <span class="contacto">Teléfono de la empresa:</span><br>681926734<br><br><br>
+        </p>
+    </div>
+    <div class="contacto">
+        <p>
+           <span class="contacto">Correo de la empresa</span><br>infmolina@gmail.com<br><br><br>
+        </p>
+    </div>
+    <div class="contacto">
+        <p>
+           <span class="contacto">Ubicación de la empresa</span><br>Av. de València, 8, 46701 Gandia, València<br><br><br>
+        </p>
+    </div>
+    <div class="contacto">
+        <p>
+            <span class="contacto">Redes sociales</span><br>Instagram: @infmolina <br> Twitter: @infmolina <br> Facebook: InfMolina S.L.
+        </p>
+    </div>
+    </fieldset>
+    <!-- FORMULARIO -->
+    <form method="POST" action="consulta_enviada.html">
+        <fieldset>
+            <legend>Datos Personales</legend>
+                <h2>Si deseas contactar con nosotros rellena el siguiente formulario, gracias por confiar en nosotros.</h2>
+            <p>
+                <label for="nombre">Nombre:<span class="rojo">*</span></label>
+                <input type="text" name="nombre" placeholder="Inserta Nombre" maxlength="50" required />
+            </p>
+            <p>
+                <label for="apellidos">Apellidos:<span class="rojo">*</span></label>
+                <input type="text" name="apellidos" placeholder="Inserta Apellido/s" maxlength="200" required />
+            </p>
+            <p>
+                <label for="provincia">Provincia<span class="rojo">*</span></label>
+                <select name="provincia" required>
+                        <option>Álava</option>
+                        <option>Albacete</option>
+                        <option>Alicante</option>
+                        <option>Almería</option>
+                        <option>Asturias</option>
+                        <option>Ávila</option>
+                        <option>Badajoz</option>
+                        <option>Barcelona</option>
+                        <option>Burgos</option>
+                        <option>Cáceres</option>
+                        <option>Cádiz</option>
+                        <option>Cantabria</option>
+                        <option>Castellón</option>
+                        <option>Ciudad Real</option>
+                        <option>Córdoba</option>
+                        <option>La Coruña</option>
+                        <option>Cuenca</option>
+                        <option>Gerona</option>
+                        <option>Granada</option>
+                        <option>Guadalajara</option>
+                        <option>Guipúzcoa</option>
+                        <option>Huelva</option>
+                        <option>Huesca</option>
+                        <option>Islas Baleares</option>
+                        <option>Jaén</option>
+                        <option>León</option>
+                        <option>Lérida</option>
+                        <option>Lugo</option>
+                        <option>Madrid</option>
+                        <option>Málaga</option>
+                        <option>Murcia</option>
+                        <option>Navarra</option>
+                        <option>Ourense</option>
+                        <option>Palencia</option>
+                        <option>Las Palmas</option>
+                        <option>Pontevedra</option>
+                        <option>La Rioja</option>
+                        <option>Salamanca</option>
+                        <option>Segovia</option>
+                        <option>Sevilla</option>
+                        <option>Soria</option>
+                        <option>Tarragona</option>
+                        <option>Santa Cruz de Tenerife</option>
+                        <option>Teruel</option>
+                        <option>Toledo</option>
+                        <option selected>Valencia</option>
+                        <option>Valladolid</option>
+                        <option>Vizcaya</option>
+                        <option>Zamora</option>
+                        <option>Zaragoza</option>
+                </select>
+            </p>
+            
+            <p>
+                <label for="correo">Correo:<span class="rojo">*</span></label>
+                <input type="email" name="correo" placeholder="ejemplo@gmail.com" required />
+            </p>
+            <p>
+                <label for="teléfono">Teléfono:</label>
+                <input type="text" name="teléfono" maxlength="15" value="+34"/>
+            </p>
+            <p>
+                <label for="tipo de consulta">Tipo de consulta<span class="rojo">*</span></label>
+                <select name="tipo de sonculta" required>
+                    <option>Reparaciones</option>
+                    <option>Talleres</option>
+                    <option>Instalación y servicio</option>
+                </select>
+            </p>
+            <p>
+                <label for="consulta">Detalles de la consulta:<span class="rojo">*</span></label><br>
+                <textarea rows="7" cols="60" name="consulta" maxlength="1000000" required></textarea>
+            </p>
+            
+            <p>
+                <input type="submit" value="Enviar" />
+            </p>
+        </fieldset>
+    </form>
+    </section>
+
+    <aside>
+        <div>
+            <h1 class="aside">Estamos afiliados a PcComponentes</h1>
+            <h3>¿Quieres saber las ofertas de PcComponentes?</h3>
+            <iframe src="https://www.pccomponentes.com/ofertas-especiales"></iframe>
+        </div>
+    </aside>
+    <footer>
+        <p class="footer">InfMolina S.L., CIF Z-12345678 - Av. de València, 8, 46701 Gandia, València</p>
+    </footer> 
+</body>
+
+</html>

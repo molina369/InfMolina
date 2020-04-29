@@ -1,0 +1,446 @@
+/* ------BASE------ */
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+body{
+    min-height: 100vh;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+iframe{
+	width: 500px;
+	height: 700px;
+}
+
+h1.aside{
+	color: rgb(23, 97, 160);
+}
+
+div.solo{
+    width: 100%;
+}
+
+span.footers{
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    font-weight: bold;
+    font-size: 15px;
+    text-shadow: 1px 1px 1px rgb(2, 0, 104);
+    margin-left: -30px;
+}
+
+.lym{
+text-align: center;
+box-shadow: 0px 30px 30px -30px #999;
+}
+
+footer{
+	background-color: rgb(167, 208, 255);
+  	height:50px;
+	width:100%;
+    margin-top: 30px;
+    align-self: flex-end;
+    text-align: center;
+}
+
+p.footer{
+    margin-left: 50px;
+    margin-top: 20px;
+}
+section{
+    width: 70%;
+    float: left;
+    margin-right: 20px;
+}
+
+aside{
+    width: 25%;
+    float: left;
+}
+
+ /* menú */
+header{
+    width: 100%;
+    height: 200px;
+    align-self: flex-start;
+}
+
+.navegacion{
+	width: 100%;
+	margin: 45px auto;
+    background: rgb(23, 97, 160);
+    border-radius: 45px;
+    text-align: center;
+    height: 60px;
+    align-self: flex-start;
+}
+
+.navegacion ul{
+	list-style: none;
+}
+
+.menu > li{
+	position: relative;
+	display: inline-block;
+}
+
+.menu > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: #e6feff;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.menu li a:hover{
+	color: #CE7D35;
+	transition: all .3s;
+}
+
+/* submenú*/
+
+.submenu{
+	position: absolute;
+	background: rgb(41, 120, 189);
+	width: 120%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+	z-index: 2;
+}
+
+.submenu li a{
+	display: block;
+	padding: 15px;
+	color: #d8f6ff;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+
+
+/* ----CONTACTO---- */
+
+body.contacto{
+    background-color: rgb(253, 253, 253);
+    background-image: url(../imagenes/contacto.png);
+    background-size: cover;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    display: flex;
+}
+span.rojo{
+    color: red;
+}
+
+h1.contacto{
+    color: rgb(23, 97, 160);
+    text-shadow: 1px 1px 1px black;
+    font-size: 60px;
+    text-align: center;
+    width: 100%;
+}
+
+div.contacto{
+    padding-left: 20px;
+    padding-right: 30px;
+    float: left;
+    width: 21%;
+    border-left: solid rgb(41, 120, 189);
+    height: 100px;
+    text-align: center;
+}
+div.contacto1{
+    padding-left: 20px;
+    padding-right: 30px;
+    float: left;
+    width: 21%;
+    height: 100px;
+    text-align: center;
+}
+
+span.contacto{
+    color: rgb(41, 120, 189);
+    text-shadow: 0.5px 0.5px 0.5px black;
+    font-size: 23px;
+    font-weight: bold;
+
+}
+
+fieldset{
+    background-color: rgba(255, 255, 255, 0.541);
+    margin-left: 15px;
+    margin-top: 30px;
+}
+legend{
+    background-color: white;
+}
+form{
+    width: 100%;
+}
+div.conse{
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    font-size: 30px;
+}
+div.consetotal{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+    background-color: rgba(151, 151, 151, 0.349);
+    padding: 20px;
+    border-radius: 100%;
+}
+
+img.señalar{
+    width: 150px;
+    height: 75px;
+}
+img.logoc{
+    width: 200px;
+    height: 200px;
+}
+
+/* ----GARANTÍAS---- */
+
+  .panel1 {
+    background-color: #ccc; 
+    padding: 30px;
+    margin-left: 5px;
+  }
+  
+  .panel2 {
+    background-color: white;
+    text-align: justify;
+    padding: 20px;
+    margin-left: 5px;
+  }
+
+  h2.garantias{
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-style: italic;
+      font-size: 35px;
+      margin-left: 30px;
+      text-shadow: 1px 1px 1px cornflowerblue;
+  }
+
+  body.garantias{
+    background-image: url(../imagenes/GARANTIA.jpg);
+    min-height: 100vh;
+    flex-wrap: wrap;
+    display: flex;
+  }
+
+  /* ----PREGUNTAS FRECUENTES---- */
+
+  div.pfreq2a{
+      margin: 2%;
+      width: 28%;
+      border: solid;
+      height: 300px;
+      float: left;
+      background-image: url(../imagenes/mapa.png);
+      background-size: cover;
+  }
+  div.pfreq2b{
+    margin: 2%;
+    width: 28%;
+    border: solid;
+    height: 300px;
+    float: left;
+    background-image: url(../imagenes/contacto.png);
+    background-size: cover;
+}
+div.pfreq2c{
+    margin: 2%;
+    width: 28%;
+    border: solid;
+    height: 300px;
+    float: left;
+    background-image: url(../imagenes/trabajadores.jpg);
+    background-size: cover;
+}
+
+  div.pfreq3{
+    height: 80%;
+    padding: 30px;
+    text-align: justify;
+  }
+  div.pfreq4{
+      background-color: cornflowerblue;
+      height: unset;
+  }
+  table{
+    width: 100%;
+    height: 100%;
+  }
+  tr{
+    text-align: center;
+  }
+
+  a.pfreq{
+      text-decoration: none;
+      font-size: 25px;
+      text-transform: uppercase;
+      font-family: fantasy;
+      color: rgb(13, 9, 255);
+
+  }
+  span.pfreq{
+      color: black;
+      background-color: white;
+      font-size: 25px;
+  }
+  p.pfreq{
+      background-color: white;
+  }
+
+
+  /* --INSTALACIÓN Y SERVICIO-- */
+
+  table.ins{
+      border: black solid;
+      height: auto;
+      width: 300px;
+      margin-bottom: 50px;
+      margin-left: 100px;
+  }
+  p.tabla{
+      color: white;
+  }
+
+  caption{
+    font-size: 20px;
+    font-weight: bold;
+    border: solid;
+    background-color: rgb(41, 120, 189);
+    height: 50px;
+    width: 700px;
+  }
+  td.a{
+      background-color: rgb(41, 120, 189);
+      font-size: 20px;
+      height: 50px;
+      border: solid;
+      width: 500px;
+  }
+
+  img.tick{
+      padding-right: 20px;
+      padding-left: 20px;
+      width: 30px;
+      height: 30px;
+  }
+
+  p.precio{
+      font-size: 50px;
+  }
+  b.precio{
+      font-size: 25px;
+  }
+
+
+  /* --UNETENOS-- */
+
+  body.unetenos{
+      background-color: rgb(182, 182, 182);
+  }
+
+  div.unetenos{
+      border: solid;
+      margin-left: 10%;
+      width: 70%;
+      background-color: rgb(228, 251, 255);
+      border-color: rgb(100, 141, 255);
+      padding: 9px;
+  }
+  div.unetenos1{
+      background-image: url(../imagenes/trabaja.jpg);
+      width: 70%;
+      height: 500px;
+      margin-left: 10%;
+      text-align: center;
+      color: white;
+      font-size: 30px;
+      margin-bottom: 20px;
+      padding: 30px;
+      padding-top: 100px;
+  }
+
+p.unetenos{
+    text-align: justify;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 20px;
+}
+
+/* --QUIENES SOMOS-- */
+
+body.qsomos{
+    background-color: rgb(241, 255, 255);
+}
+
+div.fotoiz{
+    float: left;
+    width: 25%;
+    height: 300px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    border: solid;
+}
+div.fotode{
+    float: left;
+    width: 25%;
+    height: 300px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    border: solid;
+}
+div.textoiz{
+    float: left;
+    width: 60%;
+    height: 300px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    background-color: white;
+    border: solid;
+}
+div.textode{
+    float: left;
+    width: 60%;
+    height: 300px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    background-color: white;
+    border: solid;
+}
+h1.qsomos{
+    font-size: 40px;
+    text-align: center;
+    text-decoration: underline;
+}
+img.qsomos{
+    width: 100%;
+    height: 100%;
+}
+p.qsomos{
+    font-size: 20px;
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+}
